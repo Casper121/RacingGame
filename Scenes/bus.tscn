@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://gdpgcsxhfgwn"]
+
+[ext_resource type="PackedScene" uid="uid://bk08mvxy2hm81" path="res://Assets/CarsImport/FBX 2013/Low_Poly_Vehicles_bus.fbx" id="1_s5nos"]
+[ext_resource type="Texture2D" uid="uid://w3y4ufrde8g6" path="res://Assets/CarsImport/Texture/bus01.png" id="2_mncl2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txroc"]
+albedo_texture = ExtResource("2_mncl2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_he2g8"]
+albedo_texture = ExtResource("2_mncl2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3chwu"]
+albedo_texture = ExtResource("2_mncl2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o8fux"]
+albedo_texture = ExtResource("2_mncl2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfe11"]
+albedo_texture = ExtResource("2_mncl2")
+
+[node name="Bus" instance=ExtResource("1_s5nos")]
+
+[node name="bus" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_txroc")
+
+[node name="wheel_2" parent="bus" index="1"]
+material_override = SubResource("StandardMaterial3D_he2g8")
+
+[node name="wheel_4" parent="bus" index="3"]
+material_override = SubResource("StandardMaterial3D_3chwu")
+
+[node name="wheel_5" parent="bus" index="4"]
+material_override = SubResource("StandardMaterial3D_o8fux")
+
+[node name="wheel_6" parent="bus" index="5"]
+material_override = SubResource("StandardMaterial3D_lfe11")

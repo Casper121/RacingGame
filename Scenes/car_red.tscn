@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0s2e7f0i0gim"]
+
+[ext_resource type="PackedScene" uid="uid://cclm0wc4sayi1" path="res://Assets/CarsImport/FBX 2013/Low_Poly_Vehicles_car01.fbx" id="1_0x6af"]
+[ext_resource type="Texture2D" uid="uid://bqqtj5b4jbw5f" path="res://Assets/CarsImport/Texture/car01.png" id="2_33vix"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6opy6"]
+albedo_texture = ExtResource("2_33vix")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0x6af"]
+albedo_texture = ExtResource("2_33vix")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_33vix"]
+albedo_texture = ExtResource("2_33vix")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2s2c6"]
+albedo_texture = ExtResource("2_33vix")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqebm"]
+albedo_texture = ExtResource("2_33vix")
+
+[node name="RedCar" instance=ExtResource("1_0x6af")]
+
+[node name="car01" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_6opy6")
+
+[node name="wheel" parent="car01" index="0"]
+material_override = SubResource("StandardMaterial3D_0x6af")
+
+[node name="wheel_2" parent="car01" index="1"]
+material_override = SubResource("StandardMaterial3D_33vix")
+
+[node name="wheel_3" parent="car01" index="2"]
+material_override = SubResource("StandardMaterial3D_2s2c6")
+
+[node name="wheel_4" parent="car01" index="3"]
+material_override = SubResource("StandardMaterial3D_rqebm")

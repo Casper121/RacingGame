@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ceto2ka4jwcxg"]
 
-[ext_resource type="PackedScene" uid="uid://ktgx3vq2dap3" path="res://Scenes/red_car.tscn" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://d0s2e7f0i0gim" path="res://Scenes/car_red.tscn" id="1_glv2v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_glv2v"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -34,4 +34,4 @@ mesh = SubResource("PlaneMesh_glv2v")
 shape = SubResource("WorldBoundaryShape3D_uu6xs")
 
 [node name="RedCar" parent="." instance=ExtResource("1_glv2v")]
-transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
