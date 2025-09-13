@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://ktgx3vq2dap3"]
+
+[ext_resource type="Texture2D" uid="uid://bqqtj5b4jbw5f" path="res://Assets/Cars/Texture/car01.png" id="1_gwli8"]
+[ext_resource type="ArrayMesh" uid="uid://cwv8gowxu3ekx" path="res://Assets/Cars/OBJ/Low_Poly_Vehicles_car01.obj" id="2_rv5nh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26r1u"]
+albedo_texture = ExtResource("1_gwli8")
+
+[node name="RedCar" type="MeshInstance3D"]
+material_override = SubResource("StandardMaterial3D_26r1u")
+cast_shadow = 0
+mesh = ExtResource("2_rv5nh")

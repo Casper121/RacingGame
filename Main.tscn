@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://ceto2ka4jwcxg"]
+
+[ext_resource type="PackedScene" uid="uid://ktgx3vq2dap3" path="res://Scenes/red_car.tscn" id="1_glv2v"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_glv2v"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_uu6xs"]
+sky_material = SubResource("ProceduralSkyMaterial_glv2v")
+
+[sub_resource type="Environment" id="Environment_r0du0"]
+background_mode = 2
+sky = SubResource("Sky_uu6xs")
+tonemap_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_glv2v"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_uu6xs"]
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_r0du0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.40704, 0.913411, 0, -0.913411, 0.40704, 0, 448.976, 432.966)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 0, 0, 0)
+mesh = SubResource("PlaneMesh_glv2v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D"]
+shape = SubResource("WorldBoundaryShape3D_uu6xs")
+
+[node name="RedCar" parent="." instance=ExtResource("1_glv2v")]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
