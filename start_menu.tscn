@@ -1,0 +1,110 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnvm0535whwft"]
+
+[ext_resource type="Texture2D" uid="uid://d0ysvfa3gbopf" path="res://Assets/d59c1fe8857622f416627b618f7812f6.jpg" id="1_ia0g5"]
+[ext_resource type="FontFile" uid="uid://yr6rjllfx386" path="res://Assets/Super Trend.ttf" id="1_jwbto"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vpdu5"]
+texture = ExtResource("1_ia0g5")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ndybt"]
+bg_color = Color(0.435192, 0.435192, 0.435192, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jwbto"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ia0g5"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vpdu5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = -139.0
+offset_right = 530.0
+offset_bottom = 204.0
+grow_vertical = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_jwbto")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ndybt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jwbto")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ia0g5")
+text = "Start Game"
+clip_text = true
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_jwbto")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ndybt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jwbto")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ia0g5")
+text = "Option
+"
+clip_text = true
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_jwbto")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ndybt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jwbto")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ia0g5")
+text = "Exit
+"
+clip_text = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -302.0
+offset_right = 483.0
+offset_bottom = -192.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_jwbto")
+theme_override_font_sizes/font_size = 80
+text = "Racing Race"
