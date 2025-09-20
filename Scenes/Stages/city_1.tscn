@@ -1,0 +1,107 @@
+[gd_scene load_steps=12 format=3 uid="uid://coc24jao8cvyu"]
+
+[ext_resource type="PackedScene" uid="uid://dj2m545x5fed5" path="res://Scenes/Roads/road_1.tscn" id="1_cra2j"]
+[ext_resource type="PackedScene" uid="uid://daau6uflosgmw" path="res://Scenes/Roads/road_10_90_angle_corner.tscn" id="2_51n5x"]
+[ext_resource type="PackedScene" uid="uid://bhlipbiyjlmlt" path="res://Scenes/Roads/road_1_curve_4.tscn" id="3_toumr"]
+[ext_resource type="PackedScene" uid="uid://r4wjwx72ri7v" path="res://Scenes/Roads/road_1_curve_22.tscn" id="4_1c3e6"]
+[ext_resource type="PackedScene" uid="uid://d0s2e7f0i0gim" path="res://Scenes/Cars/car_red.tscn" id="5_1c3e6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1c3e6"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_fhj3s"]
+sky_material = SubResource("ProceduralSkyMaterial_1c3e6")
+
+[sub_resource type="Environment" id="Environment_ckklk"]
+background_mode = 2
+sky = SubResource("Sky_fhj3s")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fhj3s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ckklk"]
+albedo_color = Color(0.596078, 1, 0.223529, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1c3e6"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[node name="City1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ckklk")
+
+[node name="Road" type="Node3D" parent="."]
+
+[node name="Road12" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(-4.37114e-08, 0, 13.5, 0, 1, 0, -1, 0, -5.90104e-07, -20.9113, 0, -2)
+
+[node name="Road10_90angle_Corner2" parent="Road" instance=ExtResource("2_51n5x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 65.9029, 0, -1.97373)
+
+[node name="Road13" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.285, 65.9425, 0, 17.1268)
+
+[node name="Road1_Curve42" parent="Road" instance=ExtResource("3_toumr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.9138, 0, 36.7496)
+
+[node name="Road1_Curve22" parent="Road" instance=ExtResource("4_1c3e6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 113.727, 0, 72.7457)
+
+[node name="Road1_Curve23" parent="Road" instance=ExtResource("4_1c3e6")]
+transform = Transform3D(-0.710799, 0, 0.703395, 0, 1, 0, -0.703395, 0, -0.710799, 135.77, 0, 59.0877)
+
+[node name="Road14" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.5, 141.664, 0, 30.6223)
+
+[node name="Road1_Curve43" parent="Road" instance=ExtResource("3_toumr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 177.644, 0, -19.0826)
+
+[node name="Road15" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(-4.37114e-08, 0, 5, 0, 1, 0, -1, 0, -2.18557e-07, 213.389, 0, -19.0828)
+
+[node name="Road1_Curve24" parent="Road" instance=ExtResource("4_1c3e6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 249.08, 0, -19.0762)
+
+[node name="Road16" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(-0.70834, 0, 1.35527, 0, 1, 0, -0.705872, 0, -1.36001, 274.991, 0, -36.6008)
+
+[node name="Road1_Curve44" parent="Road" instance=ExtResource("3_toumr")]
+transform = Transform3D(-0.710799, 0, 0.703395, 0, 1, 0, -0.703395, 0, -0.710799, 287.297, 0, -48.9757)
+
+[node name="Road10_90angle_Corner3" parent="Road" instance=ExtResource("2_51n5x")]
+transform = Transform3D(-0.709571, 0, -0.704634, 0, 1, 0, 0.704634, 0, -0.709571, 278.616, 0, -108.253)
+
+[node name="Road1_Curve25" parent="Road" instance=ExtResource("4_1c3e6")]
+transform = Transform3D(0.663926, 0, -0.747798, 0, 1, 0, 0.747798, 0, 0.663926, 270.216, 0, -100.374)
+
+[node name="Road10_90angle_Corner4" parent="Road" instance=ExtResource("2_51n5x")]
+transform = Transform3D(0.0575641, 0, 0.998342, 0, 1, 0, -0.998342, 0, 0.0575641, 262.691, 0, -75.4039)
+
+[node name="Road17" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(-4.37114e-08, 0, 30, 0, 1, 0, -1, 0, -1.31134e-06, 77.8345, 0, -75.722)
+
+[node name="Road10_90angle_Corner5" parent="Road" instance=ExtResource("2_51n5x")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -107.861, 0, -75.7301)
+
+[node name="Road18" parent="Road" instance=ExtResource("1_cra2j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5.2, -107.849, 0, -38.6802)
+
+[node name="Road10_90angle_Corner6" parent="Road" instance=ExtResource("2_51n5x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.851, 0, -2.00859)
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(250, 0, 0, 0, 150, 0, 0, 0, 150, 87.5672, 0, -12.1148)
+mesh = SubResource("PlaneMesh_fhj3s")
+surface_material_override/0 = SubResource("StandardMaterial3D_ckklk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_1c3e6")
+
+[node name="VehicleBody3D" parent="." instance=ExtResource("5_1c3e6")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 0, 0, 0)

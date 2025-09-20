@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://fu8qnyagguxg"]
 
-[ext_resource type="PackedScene" uid="uid://d0s2e7f0i0gim" path="res://Scenes/Cars/car_red.tscn" id="1_glv2v"]
-[ext_resource type="Script" uid="uid://cgoy3t4xe7l1k" path="res://floor.gd" id="1_uu6xs"]
+[ext_resource type="Script" uid="uid://cgoy3t4xe7l1k" path="res://floor.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://d0s2e7f0i0gim" path="res://Scenes/Cars/car_red.tscn" id="2_h2yge"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_glv2v"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -32,7 +32,7 @@ environment = SubResource("Environment_r0du0")
 disable_mode = 1
 collision_layer = 2
 collision_mask = 3
-script = ExtResource("1_uu6xs")
+script = ExtResource("1_0xm2m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(20000, 0, 0, 0, 20000, 0, 0, 0, 20000, 0, 0, 0)
@@ -44,5 +44,5 @@ transform = Transform3D(1e+06, 0, 0, 0, 1, 0, 0, 0, 1e+06, 0, 0, 0)
 shape = SubResource("BoxShape3D_glv2v")
 debug_color = Color(0.89489, 0.264431, 0.46365, 0.42)
 
-[node name="VehicleBody3D" parent="." instance=ExtResource("1_glv2v")]
+[node name="VehicleBody3D" parent="." instance=ExtResource("2_h2yge")]
 collision_mask = 3
