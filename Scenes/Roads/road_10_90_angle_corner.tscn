@@ -8,6 +8,8 @@ data = PackedVector3Array(4.9041, 0, -6, -4.9037, 0.2, -6, -4.9037, 0, -6, 4.904
 [node name="Road10_90angle_Corner2" instance=ExtResource("1_g7u80")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Road10_90angle_Corner" index="0"]
+collision_layer = 2
+collision_mask = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Road10_90angle_Corner/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_b26jb")

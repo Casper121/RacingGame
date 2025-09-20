@@ -7,7 +7,9 @@ data = PackedVector3Array(5.802, 0, 21.7121, 5.272, 0.2, 22.2426, 5.802, 0.2, 21
 
 [node name="Road1_Curve22" instance=ExtResource("1_bhxy4")]
 
-[node name="RigidBody3D" type="StaticBody3D" parent="." index="1"]
+[node name="RigidBody3D" type="StaticBody3D" parent="Road1_Curve2" index="0"]
+collision_layer = 2
+collision_mask = 3
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Road1_Curve2/RigidBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_7mfhx")
