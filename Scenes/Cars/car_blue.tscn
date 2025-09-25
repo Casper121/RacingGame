@@ -1,15 +1,16 @@
-[gd_scene load_steps=25 format=4 uid="uid://cooor0wwe52on"]
+[gd_scene load_steps=26 format=4 uid="uid://ct4kyrv3obf6r"]
 
-[ext_resource type="Script" uid="uid://cqcuvjhkyh6o0" path="res://Scripts/car.gd" id="2_4c0wv"]
-[ext_resource type="Texture2D" uid="uid://bqqtj5b4jbw5f" path="res://Assets/CarsImport/Texture/car01.png" id="2_ctjhw"]
+[ext_resource type="Script" uid="uid://cqcuvjhkyh6o0" path="res://Scripts/car.gd" id="1_vfycb"]
+[ext_resource type="Texture2D" uid="uid://c24hed1q0tdcm" path="res://Assets/CarsImport/Texture/car03.png" id="2_hw8fw"]
+[ext_resource type="Texture2D" uid="uid://bqqtj5b4jbw5f" path="res://Assets/CarsImport/Texture/car01.png" id="2_sax8y"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_k7sjs"]
 bounce = 0.1
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6fn57"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ctjhw"]
-albedo_texture = ExtResource("2_ctjhw")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bg6e"]
+albedo_texture = ExtResource("2_hw8fw")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sxxid"]
 
@@ -44,7 +45,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s51nq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p3exi"]
-albedo_texture = ExtResource("2_ctjhw")
+albedo_texture = ExtResource("2_sax8y")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s5vlr"]
 
@@ -81,7 +82,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_y84bl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4av8"]
-albedo_texture = ExtResource("2_ctjhw")
+albedo_texture = ExtResource("2_sax8y")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l5phw"]
 
@@ -118,7 +119,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_3cjs1")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c0wv"]
-albedo_texture = ExtResource("2_ctjhw")
+albedo_texture = ExtResource("2_sax8y")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8lcl"]
 
@@ -155,7 +156,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_sf3bf")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_faufh"]
-albedo_texture = ExtResource("2_ctjhw")
+albedo_texture = ExtResource("2_sax8y")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hcvrp"]
 
@@ -192,7 +193,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_35fsi")
 
 [node name="Car" type="Node3D"]
-script = ExtResource("2_4c0wv")
+script = ExtResource("1_vfycb")
 
 [node name="Ball" type="RigidBody3D" parent="."]
 collision_mask = 2
@@ -208,7 +209,7 @@ shape = SubResource("SphereShape3D_6fn57")
 
 [node name="Body" type="MeshInstance3D" parent="Car"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_ctjhw")
+material_override = SubResource("StandardMaterial3D_1bg6e")
 mesh = SubResource("ArrayMesh_2njbh")
 skeleton = NodePath("")
 

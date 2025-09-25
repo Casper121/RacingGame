@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://fu8qnyagguxg"]
 
 [ext_resource type="Script" uid="uid://cgoy3t4xe7l1k" path="res://floor.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://cooor0wwe52on" path="res://Scenes/Cars/car_01.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cooor0wwe52on" path="res://Scenes/Cars/car_red.tscn" id="2_0xm2m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_glv2v"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
