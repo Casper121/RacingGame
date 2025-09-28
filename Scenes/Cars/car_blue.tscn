@@ -237,9 +237,6 @@ material_override = SubResource("StandardMaterial3D_faufh")
 mesh = SubResource("ArrayMesh_k7luj")
 skeleton = NodePath("")
 
-[node name="Camera3D" type="Camera3D" parent="Car"]
-transform = Transform3D(1, 0, 0, 0, 0.990748, 0.135716, 0, -0.135716, 0.990748, 0, 3.32873, 6.19615)
-
 [node name="DriftTimer" type="Timer" parent="."]
 
 [node name="BoostTimer" type="Timer" parent="."]

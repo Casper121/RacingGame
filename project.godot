@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Racing Race"
-run/main_scene="uid://fu8qnyagguxg"
+run/main_scene="uid://coc24jao8cvyu"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [filesystem]
